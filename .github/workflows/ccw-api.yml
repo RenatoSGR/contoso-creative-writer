@@ -40,14 +40,14 @@ on:
 env:
   ACR_RESOURCE_GROUP: rg-ai-writer
   AZURE_CONTAINER_REGISTRY: crndlmmze4ntkyo
-  CONTAINER_NAME: image-workflow-1728594306539
+  CONTAINER_NAME: api
   CLUSTER_RESOURCE_GROUP: rg-ai-writer
   CLUSTER_NAME: ai-writer-poc
   DEPLOYMENT_MANIFEST_PATH: |
     ./infra/manifests/api/deployment.yaml
   DOCKER_FILE: ./src/api/Dockerfile
   BUILD_CONTEXT_PATH: ./src/api
-  NAMESPACE: ccw
+  NAMESPACE: namespace-workflow-1728595111811
 
 jobs:
   buildImage:
